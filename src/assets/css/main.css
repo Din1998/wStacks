@@ -54,9 +54,9 @@
     --base-component-l: 17%;
     --base-component: var(--base-component-h) var( --base-component-s) var(--base-component-l);
   /*========================= Base Color =============================*/
-    --base-h: 36;
+    --base-h: 202;
     --base-s: 100%;
-    --base-l: 50%;
+    --base-l: 49%;
     --base: var(--base-h) var( --base-s) var(--base-l);
   /*=== Secondary Color ===*/
     --secondary-h: 232;
@@ -6904,7 +6904,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     padding-top: 100px;
     padding-bottom: 40px;
     z-index: 1;
-    background: linear-gradient(120deg, hsl(var(--base)/0.3) 0%, hsl(var(--base-two)/0.2) 100%);
+    background-color: hsl(var(--base)/0.05);
     position: relative;
 }
 
