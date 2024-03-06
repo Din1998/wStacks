@@ -1,0 +1,85 @@
+// contact section right content
+.contact-right-side {
+
+
+  .title {
+    font-size: 36px !important;
+    font-weight: 700;
+    line-height: 1.27;
+    margin-bottom: 34px;
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: hsl(var(--black)/0.6);
+    margin-top: 24px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-shrink: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-shrink: 0;
+
+      .icon-wrap {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(var(--base)/0.08);
+
+        i {
+          color: hsl(var(--base));
+        }
+      }
+
+      .content-wrap {
+        width: 75%;
+
+        .title {
+
+          font-size: 14px !important;
+          font-weight: 500;
+          line-height: 21px;
+          margin-bottom: 4px !important;
+          color: hsl(var(--black)/0.5);
+
+        }
+      }
+    }
+
+  }
+}
+
+.get-in-touch {
+  border: 1px solid hsl(var(--black)/0.05);
+  border-radius: 8px;
+}
+
+.contact-card {
+  padding: 40px 28px;
+  height: 100%;
+
+}
+
+.card-left{
+  border-right: 1px solid hsl(var(--black)/0.05);
+}
+
+@media (max-width:425px) {
+  .contact-right-side {
+    .title {
+      font-size: 30px !important;
+    }
+  }
+}

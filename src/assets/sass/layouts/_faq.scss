@@ -1,0 +1,122 @@
+.faq-section {
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+
+.faq-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .thumb-wrap {
+        position: absolute;
+        bottom: -72px;
+        left: 34px;
+    }
+
+    .faq-bg {
+        width: 500px;
+        height: 500px;
+        background: hsl(var(--base)/0.1);
+        border-radius: 50%;
+    }
+
+
+    .blob {
+        position: absolute;
+        margin: auto;
+        top: 180px;
+        left: 140px;
+        svg {
+            animation: move 24s ease-in-out infinite;
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .block {
+        position: absolute;
+        top: 124px;
+        left: 152px;
+
+        .element-1 {
+            width: 70px;
+            height: 24px;
+            display: block;
+            border: 1px solid hsl(var(--base)/0.1);
+        }
+
+        .element-2 {
+            width: 70px;
+            height: 24px;
+            display: block;
+            border: 1px solid hsl(var(--base)/0.1);
+            margin-left: 20px;
+        }
+    }
+
+    .main-thumb{
+        position: absolute;
+        width: 176px;
+        height: 300px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
+@keyframes move {
+    0% {
+        transform: scale(1) translate(0, 0) rotate(0);
+        fill: hsl(var(--base)/0.7);
+        filter: drop-shadow(20px 14px 10px rgba(0, 0, 0, .1));
+    }
+
+    25% {
+        transform: scale(0.8) translate(20px, 30px) rotate(55deg);
+        fill: hsl(var(--base)/0.9);
+        filter: drop-shadow(14px 14px 6px rgba(0, 0, 0, .1));
+    }
+
+    50% {
+        transform: scale(0.6) translate(40px, 45px) rotate(180deg);
+        fill: hsl(var(--base-two)/0.4);
+        filter: drop-shadow(-16px -16px 16px rgba(0, 0, 0, .1));
+    }
+
+    75% {
+        transform: scale(0.8) translate(70px, 80px) rotate(55deg);
+        fill: hsl(var(--base-two));
+        filter: drop-shadow(14px 14px 6px rgba(0, 0, 0, .1));
+    }
+
+    100% {
+        transform: scale(1) translate(0, 0) rotate(0);
+        fill: hsl(var(--base));
+        filter: drop-shadow(20px 14px 10px rgba(0, 0, 0, .1));
+    }
+}
+
+
+
+@media (max-width: 1199px) {
+    .faq-right .faq-bg{
+        width: 420px;
+        height: 420px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .faq-right{
+       display: none;
+    }
+  }

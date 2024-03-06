@@ -1,0 +1,21 @@
+.why-choose-card{
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: hsl(var(--white));
+    padding: 28px;
+    transition: 0.2s ease-in-out;
+    border-radius: 12px;
+    .icon-thumb{
+        width: 80px;
+        height: 80px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &:hover{
+         -webkit-transform: translateY(-5px);
+        transform: translateY(-5px) scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+}

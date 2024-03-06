@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title -->
+        <title> LearnHub. </title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/common/favicon.ico">
+        <!-- Apple touch icon -->
+        <link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png">
+    
+        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <!-- Slick -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- Animate css -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Odometer -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- Odometer -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+         <!-- plyr -->
+         <link rel="stylesheet" href="assets/css/plyr.css">
+        <!-- Main css -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>                 
+
+    <!--==================== Preloader Start ====================-->      
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <span class="loader"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sidebar-overlay"></div>
+    
+    <!--==================== Preloader End ====================-->
+<!-- header -->
+<!--========================== Header section Start ==========================-->
+
+<div class="header-main-area">
+  <div class="header" id="header">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="header-wrapper">
+          <!-- ham menu -->
+          <i class="fa-sharp fa-solid fa-bars-staggered ham__menu" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+
+          <!-- logo -->
+          <div class="header-menu-wrapper align-items-center d-flex">
+            <div class="logo-wrapper">
+              <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png"
+                  alt="...">
+              </a>
+            </div>
+          </div>
+          <!-- / logo -->
+
+
+          <div class="menu-right-wrapper">
+            <div class="menu-wrapper">
+              <ul class="main-menu">
+                <li><a class='active' href="index.html">Home</a></li>
+                <li><a href="category.html">Cattery's</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <ul class="login d-flex align-items-center gap-3">
+            <li class="language">
+              <div class="language-box">
+                <i class="fa-solid fa-globe"></i>
+                <select class="select">
+                  <option selected="">English</option>
+                  <option value="1">Bangla</option>
+                  <option value="2">French</option>
+                  <option value="3">Spenich</option>
+                </select>
+              </div>
+            </li>
+            <li class="login-registration-list__item">
+              <a href="login.html"> Sign Up <i class="fa-solid fa-angles-right"></i></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--========================== Header section End ==========================-->
+
+<!--========================== Sidebar mobile menu wrap Start ==========================-->
+<div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasExample">
+  <div class="offcanvas-header">
+    <div class="logo">
+      <div class="header-menu-wrapper align-items-center d-flex">
+        <div class="logo-wrapper">
+          <a href="index.html" class="normal-logo" id="offcanvas-logo-normal">
+            <img src="assets/images/logo/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="user-info">
+      <div class="user-thumb">
+        <a href="userDashboard.html">
+          <img src="assets/images/user/user3.png" alt="user-thumb">
+        </a>
+      </div>
+      <a href="userDashboard.html">
+        <h4>Anonymous Alex</h4>
+      </a>
+    </div>
+    <ul class="side-Nav">
+      <li>
+        <a class="active" href="index.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="browse.html">
+          Browse
+        </a>
+      </li>
+      <li>
+        <a href="blog.html">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          Contact
+        </a>
+      </li>
+      <li>
+        <a href="login.html">
+          Login
+        </a>
+      </li>
+      <li>
+        <a href="login.html" class="login-btn">Signup</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--========================== Sidebar mobile menu wrap End ==========================-->
+
+
+<!-- ==================== Breadcumb Start Here ==================== -->
+<div class="breadcumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcumb__wrapper">
+                    <h2 class="breadcumb__title mb-4"> Faq </h2>
+                    <ul class="breadcumb__list">
+                        <li class="breadcumb__item"><a href="index.html" class="breadcumb__link">Home</a></li>
+                        <li class="breadcumb__icon"> <i class="fa-solid fa-slash"></i> </li>
+                        <li class="breadcumb__item"> <span class="breadcumb__item-text"> Faq </span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==================== Breadcumb End Here ==================== -->
+  
+
+<!-- faq section -->
+<!-- < faq-section -->
+<section class="faq-section pt-120">
+  <div class="container">
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-content">
+            <div class="title-wrap">
+              <div class="row">
+                <div class="col-lg-4">
+                  <h1 class="title mb-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">How Can We Help You?</h1>
+                  <p class="subtitle wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Discouraged and irrelevant life attitudes. You're upgrading
+                    to be a better you.peek into.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 d-flex align-items-center">
+       
+          <div class="accordion custom--accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item wow animate__ animate__fadeInUp animated" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                 
+                  Are these tools legal and safe use?
+                </button>
+              </div>
+              <div id="flush-collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">PPC (Pay-Per-Click) and CPM (Cost-Per-Mille) are two popular online
+                  advertising models.
+                  PPC involves advertisers paying for each click their ad receives,
+                  while CPM requires advertisers to pay for every 1,000 ad impressions.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item wow animate__ animate__fadeInUp animated" data-wow-delay="0.3s"
+              style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                
+                  Are these tools legal and safe use?
+                </button>
+              </div>
+              <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">In PPC advertising, advertisers bid on keywords relevant to their target
+                  audience. When users search for those keywords, the ad is displayed. Advertisers only pay when someone
+                  clicks on their ad, directing them to their website or landing page.</div>
+              </div>
+            </div>
+            <div class="accordion-item wow animate__ animate__fadeInUp animated" data-wow-delay="0.4s"
+              style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                  Are exchange rates the same everywhere?
+                </button>
+              </div>
+              <div id="flush-collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">PPC offers instant visibility for your business, targeted reach, and
+                  complete control over your budget. It allows you to measure the effectiveness of your ads in real-time
+                  and make data-driven optimizations.</div>
+              </div>
+            </div>
+            <div class="accordion-item wow animate__ animate__fadeInUp animated" data-wow-delay="0.5s"
+              style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                  Are these tools legal and safe use?
+                </button>
+              </div>
+              <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">CPM advertising charges advertisers for every 1,000 impressions their ad
+                  receives, regardless of whether users click on it or not. It is particularly useful for brand
+                  awareness campaigns and reaching a broad audience.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="faq-right">
+            <span class="faq-bg"> </span>
+
+            <div class="thumb-wrap">
+              <img src="assets/images/common/faq-bg.png" alt="...">
+            </div>
+
+            <div class="blob">
+
+              <svg  viewBox="0 0 600 600">
+                <path>
+                  <animate attributeName="d" dur="8s" repeatCount="indefinite"
+                    values="M431.3 121.9c22 40.1 11.3 97.5 13.3 146.9 2 49.5 16.6 91.1 4.3 121.8-12.2 30.6-51.3 50.4-88.5 55.1-37.1 4.7-72.4-5.7-108.8-17.1-36.5-11.3-74.1-23.7-104-52-29.9-28.2-52-72.4-48.4-115.4 3.5-43 32.7-84.8 70.5-122.2 37.7-37.3 84-70.2 134.5-75.1 50.4-5 105.1 17.9 127.1 58z;
+                    
+                            M404.4 176.7c20.9 16.4 20.8 58.8 38.8 106.2 18.1 47.4 54.4 99.7 40.9 123.6-13.5 23.9-76.7 19.3-131.6 40.4-54.8 21-101.2 67.7-150.5 71.7-49.4 4.1-101.7-34.5-107.8-81.9C88 389.2 128 333 144.2 278c16.2-55.1 8.5-108.8 30.5-125 22-16.1 73.7 5.5 120.4 11.3 46.7 5.9 88.5-3.9 109.3 12.4z;
+                            
+                            M431.3 121.9c22 40.1 11.3 97.5 13.3 146.9 2 49.5 16.6 91.1 4.3 121.8-12.2 30.6-51.3 50.4-88.5 55.1-37.1 4.7-72.4-5.7-108.8-17.1-36.5-11.3-74.1-23.7-104-52-29.9-28.2-52-72.4-48.4-115.4 3.5-43 32.7-84.8 70.5-122.2 37.7-37.3 84-70.2 134.5-75.1 50.4-5 105.1 17.9 127.1 58z;" />
+                </path>
+              </svg>
+          
+            </div>
+
+            <div class="block">
+              <span class="element-1 left_image_bounce-1"></span>
+              <span class="element-2 left_image_bounce"></span>
+            </div>
+
+            <div class="main-thumb">
+              <img src="assets/images/common/faq-img.png" alt="...">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+ 
+
+  </div>
+</section>
+<!--  faq-section /> -->
+
+<!-- login section -->
+<section class="login-section">
+    <div class="container-fluid px-0">
+        <div class="row mx-0">
+            <div class="col-xl-7 col-lg-6 px-0 d-none d-lg-block">
+                <div class="login-left-section bg--img">
+
+                    <span class="login-element1 login-bg-img">
+                        <img src="assets/images/common/login1.png" alt="...">
+                    </span>
+                    <!-- <span class="login-element2">
+                        <img src="assets/images/common/login2.png" alt="...">
+                    </span> -->
+                    <!-- <span class="login-element3">
+                        <img src="assets/images/common/login3.png" alt="...">
+                    </span> -->
+                    <!-- <span class="login-element4">
+                        <img src="assets/images/common/login4.png" alt="...">
+                    </span> -->
+                    <!-- <span class="login-element5">
+                        <img src="assets/images/common/login2.png" alt="...">
+                    </span> -->
+                    <span class="login-element6">
+                        <img src="assets/images/common/login5.png" alt="...">
+                    </span>
+                    <span class="login-element7">
+                        <img src="assets/images/common/login6.png" alt="...">
+                    </span>
+                    <span class="login-element8">
+                        <img src="assets/images/common/login7.png" alt="...">
+                    </span>
+                    <span class="login-element9">
+                        <img src="assets/images/common/login6.png" alt="...">
+                    </span>
+
+                    <div class="content-wrap">
+                        <div class="logo-wrap">
+                            <a href="index.html"><img src="assets/images/logo/logo.png" alt="..."></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-5 col-lg-6 px-0">
+                <!-- < sign in components -->
+                <div class="login-box">
+                    <div class="close--btn">
+                        <div class="wrap">
+                            <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                    </div>
+                    <h4 class="title">Create Your Account</h4>
+                    <div class="mb-4 form-group">
+                        <label class="mb-2 form--label">User name</label>
+                        <input class="form--control" placeholder="User name">
+                    </div>
+                    <div class="mb-4 form-group">
+                        <label class="mb-2 form--label">Email</label>
+                        <input class="form--control" placeholder="Name">
+                    </div>
+                    <div class="mb-4 form-group">
+                        <label class="mb-2 form--label">Passwords</label>
+                        <input class="form--control" placeholder="Name">
+                    </div>
+                    <div class="mb-4 form-group">
+                        <label class="mb-2 form--label">Confirm Passwords</label>
+                        <input class="form--control" placeholder="Name">
+                    </div>
+                    <div class="login-meta mb-4" data-wow-delay="0.5s">
+                        <div class="form--check">
+                            <input class="form-check-input" type="checkbox" value="">
+                        </div>
+                        <div class="condition-text">
+                            <p>I agree with Company, <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn btn--base w-100">Sign Up</button>
+                    <div class="social-option">
+                        <div class="text">
+                            <h6>or</h6>
+                        </div>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                        <p> Already have an account ? <a href="#">Log In</a></p>
+                    </div>
+                </div>
+
+
+                <!-- sign in components /> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- blog section -->
+<!-- ==================== Footer Start Here ==================== -->
+<footer class="footer-area">
+    <div class="footer-top py-115">
+        <div class="container">
+            <div class="row gy-4 justify-content-center">
+                <div class="col-xl-2 col-sm-6">
+                    <div class="footer-item">
+                        <div class="footer-item__logo wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <a href="index.html" class="footer-logo-normal" id="footer-logo-normal"> <img src="assets/images/logo/footer-logo.png" alt=""></a>
+                        </div>
+                        <p class="footer-item__desc wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Ipsum pretium earum? Totam! Aliquet felis. Nonummy cum posuere. Primis. Magnam nec, tempora tellus.</p>
+
+                       
+                    </div>
+                </div> 
+                <div class="col-xl-2 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Useful Link</h5>
+                        <ul class="footer-menu">
+                          <li class="footer-menu__item"><a href="_blogs.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Our Blog </a></li>
+                            <li class="footer-menu__item"><a href="about.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> About Us </a></li>
+                            <li class="footer-menu__item"><a href="terms-of-service.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Privacy Policy</a></li>
+                            <li class="footer-menu__item"><a href="terms-of-service.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Term Of Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Cottagey</h5>
+                        <ul class="footer-menu">
+                          <li class="footer-menu__item"><a href="login.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Dashboard</a></li>
+                            <li class="footer-menu__item"><a href="login.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> My Profile </a></li>
+                            <li class="footer-menu__item"><a href="dashboard.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Notification</a></li>
+                            <li class="footer-menu__item"><a href="dashboard.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> My Ads</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Contact Us</h5>
+                        <div class="footer-contact-info mb-3">
+                          <i class="fa-solid fa-mobile-screen-button"></i>
+                          <p><a href="tel:+8800000000000">+880 0000 000 000</a> </p>
+                        </div>    
+                        <div class="footer-contact-info mb-3">
+                          <i class="fa-regular fa-envelope"></i>
+                          <p><a href="mailto:wstacksltd@gmail.com">wstacksltd@gmail.com</a></p>
+                        </div>  
+                        <ul class="social-list wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                            <li class="social-list__item"><a href="https://www.facebook.com" class="social-list__link icon-wrapper"><div class="icon"><i class="fab fa-facebook-f"></i></div></a> </li>
+                            <li class="social-list__item"><a href="https://www.twitter.com" class="social-list__link icon-wrapper active"><div class="icon"><i class="fa-brands fa-x-twitter"></i></div> </a></li>
+                            <li class="social-list__item"><a href="https://www.linkedin.com" class="social-list__link icon-wrapper"> <div class="icon"><i class="fab fa-linkedin-in"></i></div></a></li>
+                            <li class="social-list__item"><a href="https://www.pinterest.com" class="social-list__link icon-wrapper"> <div class="icon"><i class="fab fa-instagram"></i></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Newsletter</h5>
+                        <p class="footer-item__desc">To get the latest news and latest updates from us.</p>
+                        <div class="subscribe-box">
+                          <form>
+                            <input class="form--control footer-input" type="text" placeholder="Email Address">
+                            <button class="sub-btn" type="submit"><i class="fa-regular fa-paper-plane"></i></button>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Footer Top End-->
+  
+    <!-- bottom Footer -->
+    <div class="bottom-footer py-3">
+        <div class="container">
+            <div class="row text-center gy-2">
+                <div class="col-lg-12">
+                    <div class="bottom-footer-text"> &copy; Copyright 2023 . All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- ==================== Footer End Here ==================== -->
+  
+
+
+
+<div class="scroll-top show">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 197.514;"></path>
+  </svg>
+</div>
+
+<!-- footer -->
+
+<!-- footer -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/moment.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Appear -->
+<script src="assets/js/jquery.appear.min.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.min.js"></script>
+<!-- popup js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+<!-- plyr -->
+<script src="assets/js/plyr.js"></script>
+
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>     

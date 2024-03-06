@@ -1,0 +1,612 @@
+
+<!-- dashboard section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title -->
+        <title> Rentout. </title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/common/favicon.ico">
+        <!-- Apple touch icon -->
+        <link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png">
+    
+        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <!-- Slick -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- Animate css -->
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <!-- Odometer -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- Odometer -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Odometer -->
+        <link rel="stylesheet" href="assets/css/glightbox.min.css">
+         <!-- Odometer -->
+
+         <link rel="stylesheet" href="assets/css/lightpick.min.css">
+        
+        <!-- Main css -->
+        <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>                 
+
+    <!--==================== Preloader Start ====================-->      
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <span class="loader"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sidebar-overlay"></div>
+    
+    <!--==================== Preloader End ====================-->
+  <!-- header -->
+<!--========================== Header section Start ==========================-->
+
+<div class="header-main-area">
+  <div class="header" id="header">
+    <div class="container position-relative">
+      <div class="row">
+          <div class="header-wrapper">
+            <!-- ham menu -->
+            <i class="fa-sharp fa-solid fa-bars-staggered ham__menu" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+
+            <!-- logo -->
+            <div class="header-menu-wrapper align-items-center d-flex">
+              <div class="logo-wrapper">
+                <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png" alt="...">
+                </a>
+              </div>
+            </div>
+            <!-- / logo -->
+            <!-- < search box -->
+              <div class="search-box-wrap">
+                <form>
+                  <input class="form--control header-input" placeholder="What are you looking for?">
+                  <select class="form--control form-select header-select" name="country">
+                    <option value="" data-code="">
+                      All Category
+                    </option>
+                    <option value="Afghanistan" data-code="AF">
+                      Pc Game
+                    </option>
+                    <option value="Afghanistan" data-code="AF">
+                      Console Game
+                    </option>
+                  </select>
+                  <button class="btn--base header-sub-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+            <!-- search box /> -->
+              <div class="menu-right-wrapper">
+                <ul>
+                  <li class="language">
+                    <div class="language-box">
+                        <i class="fa-solid fa-globe"></i>
+                        <select class="select">
+                            <option selected="">English</option>
+                            <option value="1">Bangla</option>
+                            <option value="2">French</option>
+                            <option value="3">Spenich</option>
+                        </select>
+                    </div>
+                  </li>
+                  <li class="login-registration-list__item">
+                    <a href="login.html"> <i class="fa-solid fa-user"></i> Sign in</a>
+                  </li>
+                  <li class="login-registration-list__item">
+                    <a href="#" class="login-btn cart-btn"><i class="las la-shopping-cart"></i></a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      
+      <div class="row">
+        <div class="header-wrapper-2">
+          <!-- ham menu -->
+          <i class="fa-sharp fa-solid fa-bars-staggered ham__menu" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          </i>
+
+          <div class="menu-wrapper">
+            <ul class="main-menu">
+              <li><a class='active' href="index.html">Home</a></li>
+              <li><a href="dashboard.html">My Order</a></li>
+              <li><a href="deposit.html">Wallet</a></li>
+              <li><a href="transactions.html">Transaction</a></li>
+            </ul>
+          </div>
+          
+          <div class="menu-right-wrapper">
+            <ul>
+              <li>
+                <a href="wislist.html"><i class="fa-regular fa-heart"></i> Wishlist</a>
+              </li>
+              <li class="profile-option">
+                <a href="#"><i class="fa-regular fa-user"></i> Profile</a>
+                <div class="profile-dropdown-menu">
+                  <ul>
+                    <li><a href="user-profile.html">Profile Settings</a></li>
+                    <li><a href="change-password.html">Change Password</a></li>
+                    <li><a href="two-fa-security.html">2Fa Security</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--========================== Header section End ==========================-->
+
+<!--========================== Sidebar mobile menu wrap Start ==========================-->
+<div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasExample">
+  <div class="offcanvas-header">
+    <div class="logo">
+      <div class="header-menu-wrapper align-items-center d-flex">
+        <div class="logo-wrapper">
+          <a href="index.html" class="normal-logo" id="offcanvas-logo-normal"> 
+            <img src="assets/images/logo/logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="user-info">
+      <div class="user-thumb">
+        <a href="userDashboard.html">
+          <img src="assets/images/user/user3.png" alt="user-thumb">
+        </a>
+      </div>
+      <a href="userDashboard.html">
+        <h4>Anonymous Alex</h4>
+      </a>
+    </div>
+    <ul class="side-Nav">
+      <li>
+        <a class="active" href="index.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="blog.html">
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          Contact
+        </a>
+      </li>
+      <li>
+        <a href="login.html">
+          Login
+        </a>
+      </li>
+      <li>
+       <button class="login-btn">Signup</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--========================== Sidebar mobile menu wrap End ==========================-->
+
+<section class="dashboard-section bg--black">
+    <div class="dashboard">
+        <div class="container">
+            <div class="dashboard-body py-60">
+                <div class="row justify-content-center align-items-center gy-4">
+                    <div class="col-lg-6">
+                        <div class="global-card">
+                        <h6 class="title mb-3">Payment Options</h6>
+                        <form action="#" method="post">
+                            <input type="hidden" name="_token" value="ipKeKGmdCWlOCiUNfjMZ1OroOYo1izYDoUQDw6aK" id="_token">
+                            <input type="hidden" name="method_code" id="method_code" value="101">
+                            <input type="hidden" name="currency" id="currency" value="USD">
+                            <div class="form-group mb-3">
+                                <label class="form-label required mb-3" for="gateway">Select Gateway</label>
+                                <select class=" select form-control form--control" name="gateway" required="" id="gateway">
+                                    <option value="">Select One</option>
+                                    <option value="101" data-gateway="{&quot;id&quot;:3,&quot;name&quot;:&quot;Paypal - USD&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;symbol&quot;:&quot;$&quot;,&quot;method_code&quot;:101,&quot;gateway_alias&quot;:&quot;Paypal&quot;,&quot;min_amount&quot;:&quot;1.00000000&quot;,&quot;max_amount&quot;:&quot;50000.00000000&quot;,&quot;percent_charge&quot;:&quot;1.00&quot;,&quot;fixed_charge&quot;:&quot;1.00000000&quot;,&quot;rate&quot;:&quot;1.00000000&quot;,&quot;image&quot;:null,&quot;gateway_parameter&quot;:&quot;{\&quot;paypal_email\&quot;:\&quot;sb-58ira22618401@business.example.com\&quot;}&quot;,&quot;created_at&quot;:&quot;2023-06-13T01:37:11.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-06-13T01:37:11.000000Z&quot;,&quot;method&quot;:{&quot;id&quot;:1,&quot;form_id&quot;:0,&quot;code&quot;:&quot;101&quot;,&quot;name&quot;:&quot;Paypal&quot;,&quot;alias&quot;:&quot;Paypal&quot;,&quot;status&quot;:true,&quot;gateway_parameters&quot;:&quot;{\&quot;paypal_email\&quot;:{\&quot;title\&quot;:\&quot;PayPal Email\&quot;,\&quot;global\&quot;:true,\&quot;value\&quot;:\&quot;sb-58ira22618401@business.example.com\&quot;}}&quot;,&quot;supported_currencies&quot;:{&quot;AUD&quot;:&quot;AUD&quot;,&quot;BRL&quot;:&quot;BRL&quot;,&quot;CAD&quot;:&quot;CAD&quot;,&quot;CZK&quot;:&quot;CZK&quot;,&quot;DKK&quot;:&quot;DKK&quot;,&quot;EUR&quot;:&quot;EUR&quot;,&quot;HKD&quot;:&quot;HKD&quot;,&quot;HUF&quot;:&quot;HUF&quot;,&quot;INR&quot;:&quot;INR&quot;,&quot;ILS&quot;:&quot;ILS&quot;,&quot;JPY&quot;:&quot;JPY&quot;,&quot;MYR&quot;:&quot;MYR&quot;,&quot;MXN&quot;:&quot;MXN&quot;,&quot;TWD&quot;:&quot;TWD&quot;,&quot;NZD&quot;:&quot;NZD&quot;,&quot;NOK&quot;:&quot;NOK&quot;,&quot;PHP&quot;:&quot;PHP&quot;,&quot;PLN&quot;:&quot;PLN&quot;,&quot;GBP&quot;:&quot;GBP&quot;,&quot;RUB&quot;:&quot;RUB&quot;,&quot;SGD&quot;:&quot;SGD&quot;,&quot;SEK&quot;:&quot;SEK&quot;,&quot;CHF&quot;:&quot;CHF&quot;,&quot;THB&quot;:&quot;THB&quot;,&quot;USD&quot;:&quot;$&quot;},&quot;crypto&quot;:0,&quot;extra&quot;:null,&quot;description&quot;:null,&quot;created_at&quot;:&quot;2019-09-14T08:14:22.000000Z&quot;,&quot;updated_at&quot;:&quot;2022-11-26T02:03:45.000000Z&quot;}}">Paypal - USD</option>
+                                    <option value="114" data-gateway="{&quot;id&quot;:5,&quot;name&quot;:&quot;Stripe Checkout - USD&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;symbol&quot;:&quot;$&quot;,&quot;method_code&quot;:114,&quot;gateway_alias&quot;:&quot;StripeV3&quot;,&quot;min_amount&quot;:&quot;1.00000000&quot;,&quot;max_amount&quot;:&quot;10000.00000000&quot;,&quot;percent_charge&quot;:&quot;0.00&quot;,&quot;fixed_charge&quot;:&quot;0.00000000&quot;,&quot;rate&quot;:&quot;1.00000000&quot;,&quot;image&quot;:null,&quot;gateway_parameter&quot;:&quot;{\&quot;secret_key\&quot;:\&quot;sk_test_51M8Ks2CL65BWuH7eCBcWsLP2yPfWaLtfJVxG3zfii7cCWJE1izM4jkhucmBSm6izmVtSGZyp0JDYYCVmx9E4WmQY004gfnctzD\&quot;,\&quot;publishable_key\&quot;:\&quot;pk_test_51M8Ks2CL65BWuH7eju6khGxJMpeeFuw2Rwrjr8UYCz6ZnQ3PiFxb1gVu1i1dBto9MQrnjkBimHkFJgNcqsrJHTak0010kCY41h\&quot;,\&quot;end_point\&quot;:\&quot;whsec_BlKNKaNvjJujqjA84yBBTv87fu9JERTF\&quot;}&quot;,&quot;created_at&quot;:&quot;2023-06-19T08:50:54.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-06-19T08:50:54.000000Z&quot;,&quot;method&quot;:{&quot;id&quot;:12,&quot;form_id&quot;:0,&quot;code&quot;:&quot;114&quot;,&quot;name&quot;:&quot;Stripe Checkout&quot;,&quot;alias&quot;:&quot;StripeV3&quot;,&quot;status&quot;:true,&quot;gateway_parameters&quot;:&quot;{\&quot;secret_key\&quot;:{\&quot;title\&quot;:\&quot;Secret Key\&quot;,\&quot;global\&quot;:true,\&quot;value\&quot;:\&quot;sk_test_51M8Ks2CL65BWuH7eCBcWsLP2yPfWaLtfJVxG3zfii7cCWJE1izM4jkhucmBSm6izmVtSGZyp0JDYYCVmx9E4WmQY004gfnctzD\&quot;},\&quot;publishable_key\&quot;:{\&quot;title\&quot;:\&quot;PUBLISHABLE KEY\&quot;,\&quot;global\&quot;:true,\&quot;value\&quot;:\&quot;pk_test_51M8Ks2CL65BWuH7eju6khGxJMpeeFuw2Rwrjr8UYCz6ZnQ3PiFxb1gVu1i1dBto9MQrnjkBimHkFJgNcqsrJHTak0010kCY41h\&quot;},\&quot;end_point\&quot;:{\&quot;title\&quot;:\&quot;End Point Secret\&quot;,\&quot;global\&quot;:true,\&quot;value\&quot;:\&quot;whsec_BlKNKaNvjJujqjA84yBBTv87fu9JERTF\&quot;}}&quot;,&quot;supported_currencies&quot;:{&quot;USD&quot;:&quot;USD&quot;,&quot;AUD&quot;:&quot;AUD&quot;,&quot;BRL&quot;:&quot;BRL&quot;,&quot;CAD&quot;:&quot;CAD&quot;,&quot;CHF&quot;:&quot;CHF&quot;,&quot;DKK&quot;:&quot;DKK&quot;,&quot;EUR&quot;:&quot;EUR&quot;,&quot;GBP&quot;:&quot;GBP&quot;,&quot;HKD&quot;:&quot;HKD&quot;,&quot;INR&quot;:&quot;INR&quot;,&quot;JPY&quot;:&quot;JPY&quot;,&quot;MXN&quot;:&quot;MXN&quot;,&quot;MYR&quot;:&quot;MYR&quot;,&quot;NOK&quot;:&quot;NOK&quot;,&quot;NZD&quot;:&quot;NZD&quot;,&quot;PLN&quot;:&quot;PLN&quot;,&quot;SEK&quot;:&quot;SEK&quot;,&quot;SGD&quot;:&quot;SGD&quot;},&quot;crypto&quot;:0,&quot;extra&quot;:{&quot;webhook&quot;:{&quot;title&quot;:&quot;Webhook Endpoint&quot;,&quot;value&quot;:&quot;ipn.StripeV3&quot;}},&quot;description&quot;:null,&quot;created_at&quot;:&quot;2019-09-14T08:14:22.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-06-19T08:50:54.000000Z&quot;}}">Stripe Checkout - USD</option>
+                                    <option value="1000" data-gateway="{&quot;id&quot;:2,&quot;name&quot;:&quot;Mobile&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;symbol&quot;:&quot;&quot;,&quot;method_code&quot;:1000,&quot;gateway_alias&quot;:&quot;mobile&quot;,&quot;min_amount&quot;:&quot;1.00000000&quot;,&quot;max_amount&quot;:&quot;500000.00000000&quot;,&quot;percent_charge&quot;:&quot;1.00&quot;,&quot;fixed_charge&quot;:&quot;1.00000000&quot;,&quot;rate&quot;:&quot;1.00000000&quot;,&quot;image&quot;:null,&quot;gateway_parameter&quot;:null,&quot;created_at&quot;:&quot;2023-05-28T22:48:10.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-28T22:48:10.000000Z&quot;,&quot;method&quot;:{&quot;id&quot;:48,&quot;form_id&quot;:20,&quot;code&quot;:&quot;1000&quot;,&quot;name&quot;:&quot;Mobile&quot;,&quot;alias&quot;:&quot;mobile&quot;,&quot;status&quot;:true,&quot;gateway_parameters&quot;:&quot;[]&quot;,&quot;supported_currencies&quot;:[],&quot;crypto&quot;:0,&quot;extra&quot;:null,&quot;description&quot;:&quot;<p>ABC<\/p>&quot;,&quot;created_at&quot;:&quot;2023-05-28T22:48:10.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-05-28T22:48:31.000000Z&quot;}}">Mobile</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label mb-3 required" for="amount">Amount</label>
+                                <div class="input-group country-code">
+                                    <span class="input-group-text">USD</span>
+                                    <input type="number" step="any" name="amount" class="form-control form--control" value="" autocomplete="off" required="" id="amount">
+                                </div>
+                            </div>
+                            <div class="preview-details">
+                                <span>Limit</span>
+                                <span><span class="min fw-bold">1.00</span> USD - <span class="max fw-bold">50000.00</span> USD , </span>
+                                <span>Charge</span>
+                                <span><span class="charge fw-bold">6.00</span> USD ,</span>
+                                <span>Payable</span> 
+                                <span>
+                                    <span class="payable fw-bold">
+                                        506.00
+                                    </span>
+                                    USD 
+                                </span>
+                            </div>
+                            <button type="submit" class="btn btn--base w-50 mt-3">Submit</button>
+                        </form>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<!-- cart section -->
+<!-- < add to cart components -->
+
+<div class="cart-box animate__backInRight">
+    <button class="close--btn"><i class="fa-solid fa-xmark"></i></button>
+    <div class="form--check mb-20">
+        <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        <label class="form-check-label" for="chekbox-0">
+            SELECT ALL (04 ITEMS)
+        </label>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img1.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img2.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img3.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img4.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img3.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img2.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img1.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img2.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img3.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img4.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img2.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img1.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+    <div class="cart-item-card">
+        <div class="form--check mb-20">
+            <input class="form-check-input filter-by-category" name="categories" type="checkbox" value="1" id="categories">
+        </div>
+        <div class="thumb">
+            <img src="assets/images/hero-product/img1.png" alt="...">
+        </div>
+        <div class="content">
+            <a href="#"><h6 class="title">Deep Black Gulxckic Sueam Key GLOBAL</h6></a>
+            <a href="#"><p class="price">$48.31</p></a>
+        </div>
+        <div class="user-cta">
+            <button class="fav-btn"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+
+    <button class="btn btn--base w-100"> Proceed To Checkout (1)</button>
+</div>
+
+
+<!-- add to cart components /> -->
+ <!-- footer section -->
+ <!-- ==================== Footer Start Here ==================== -->
+<footer class="footer-area bg--img" style="background-image: url(assets/images/common/footer-bg.png);">
+    <div class="footer-top py-115">
+        <div class="container">
+            <div class="row gy-4 justify-content-center">
+                <div class="col-xl-4 col-sm-6">
+                    <div class="footer-item">
+                        <div class="footer-item__logo wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <a href="index.html" class="footer-logo-normal" id="footer-logo-normal"> <img src="assets/images/logo/footer-logo.png" alt=""></a>
+                        </div>
+                        <p class="footer-item__desc wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">The passage experienced a surge in popularity during the serts when Letraset used it on their dry-transfer es, there are many not ma corporate businesses </p>
+
+                        <ul class="social-list wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                            <li class="social-list__item"><a href="https://www.facebook.com" class="social-list__link icon-wrapper"><div class="icon"><i class="fab fa-facebook-f"></i></div></a> </li>
+                            <li class="social-list__item"><a href="https://www.twitter.com" class="social-list__link icon-wrapper active"><div class="icon"><i class="fab fa-twitter"></i></div> </a></li>
+                            <li class="social-list__item"><a href="https://www.linkedin.com" class="social-list__link icon-wrapper"> <div class="icon"><i class="fab fa-linkedin-in"></i></div></a></li>
+                            <li class="social-list__item"><a href="https://www.pinterest.com" class="social-list__link icon-wrapper"> <div class="icon"><i class="fab fa-instagram"></i></div></a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="col-xl-2 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Company</h5>
+                        <ul class="footer-menu">
+                          <li class="footer-menu__item"><a href="_blogs.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Our Blog </a></li>
+                            <li class="footer-menu__item"><a href="about.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> About Us </a></li>
+                            <li class="footer-menu__item"><a href="terms-of-service.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Privacy Policy</a></li>
+                            <li class="footer-menu__item"><a href="terms-of-service.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Term Of Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">My Account</h5>
+                        <ul class="footer-menu">
+                          <li class="footer-menu__item"><a href="login.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Dashboard</a></li>
+                            <li class="footer-menu__item"><a href="login.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> My Profile </a></li>
+                            <li class="footer-menu__item"><a href="dashboard.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> Notification</a></li>
+                            <li class="footer-menu__item"><a href="dashboard.html" class="footer-menu__link"><i class="fa-solid fa-angles-right"></i> My Ads</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Newsletter</h5>
+                        <p class="footer-item__desc">Stay up-to-date with the latest news, updates, and offers by subscribing to our newsletter.</p>
+                        <div class="subscribe-box">
+                          <form>
+                            <input class="form--control footer-input" type="text" placeholder="Email Address">
+                            <button class="btn btn--base sub-btn" type="submit">Subscribe</button>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Footer Top End-->
+  
+    <!-- bottom Footer -->
+    <div class="bottom-footer py-3">
+        <div class="container">
+            <div class="row text-center gy-2">
+                <div class="col-lg-12">
+                    <div class="bottom-footer-text"> &copy; Copyright 2023 . All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- ==================== Footer End Here ==================== -->
+  
+
+
+
+<div class="scroll-top show">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 197.514;"></path>
+  </svg>
+</div>
+
+<!-- footer -->
+<!--  dashboard section /> -->
+
+<!-- Jquery js -->
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/js/moment.min.js"></script>
+<!-- Slick js -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Odometer js -->
+<script src="assets/js/odometer.min.js"></script>
+<!-- Appear -->
+<script src="assets/js/jquery.appear.min.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.min.js"></script>
+<!-- popup js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- glight js -->
+<script src="assets/js/glightbox.min.js"></script>
+<!-- apexchart js -->
+<script src="assets/js/apexcharts.min.js"></script>
+<!-- lightpic js -->
+<script src="assets/js/litepicker.js"></script>
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>     
