@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*================ Css Variables Start ===============*/
 :root {
   /* === Font Family === */
-    --heading-font: "Rubik", sans-serif;
-    --body-font: "Rubik", sans-serif;
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Inter", sans-serif;
   /* === TypoGraphy ===*/
     --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem);
     --heading-two: clamp(1.375rem, 1.7vw + 1rem, 2.5rem);
@@ -6915,27 +6917,11 @@ select.form-control.form--control:has(option) ~ .form--label {
     z-index: -1;
 }
 
-.hero-element-1 svg {
-    fill: hsl(var(--base)/0.5);
-}
-
-.hero-element-1 svg path {
-    transition: all 2s ease;
-}
-
 .hero-element-2 {
     position: absolute;
     right: 0px;
     top: 0px;
     z-index: -1;
-}
-
-.hero-element-2 svg {
-    fill: hsl(var(--base-two)/0.2);
-}
-
-.hero-element-2 svg path {
-    transition: all 2s ease;
 }
 
 .hero-element-3 {
@@ -6945,37 +6931,11 @@ select.form-control.form--control:has(option) ~ .form--label {
     z-index: -1;
 }
 
-.hero-element-3 svg {
-    fill: hsl(var(--base-two));
-}
-
-.hero-element-3 svg .line {
-    fill: none;
-    stroke: hsl(var(--base-two));
-    stroke-width: 1px;
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: line-ani 6s infinite forwards;
-}
-
 .hero-element-4 {
     position: absolute;
     left: 100px;
     top: 10%;
     z-index: -1;
-}
-
-.hero-element-4 svg {
-    fill: hsl(var(--base));
-}
-
-.hero-element-4 svg .line {
-    fill: none;
-    stroke: hsl(var(--base)/0.4);
-    stroke-width: 1px;
-    stroke-dasharray: 400;
-    stroke-dashoffset: 400;
-    animation: line-ani 8s infinite forwards;
 }
 
 @keyframes line-ani {
@@ -6992,77 +6952,60 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .hero-left-content .hero-title {
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 1.2;
+    font-size: 73px;
+    font-weight: 700;
+    line-height: 1.19;
     margin-bottom: 20px !important;
     color: hsl(var(--black));
-}
-
-.hero-left-content .hero-subtitle {
-    color: hsl(var(--black)/0.5);
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 32px;
-}
-
-.hero-left-content .top-users {
-    display: flex;
-    margin-bottom: 48px;
-}
-
-.hero-left-content .top-users .thumb-wrap {
-    display: flex;
     position: relative;
 }
 
-.hero-left-content .top-users .thumb-wrap .user-thumb {
-    border: 5px solid hsl(var(--white));
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-}
-
-.hero-left-content .top-users .thumb-wrap .user-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-left-content .top-users .thumb-wrap .thumb2 {
+.hero-left-content .hero-title .tesxt2 {
+    padding: 18px 18px 18px 23px;
+    border-radius: 39.5px;
+    display: inline-block;
+    font-size: 27px;
+    line-height: 1.19;
     position: relative;
-    top: 0px;
-    left: -13px;
+    top: -10px;
+    right: 0px;
+    background: hsl(var(--white));
+    --border-width: 3px;
 }
 
-.hero-left-content .top-users .thumb-wrap .thumb3 {
-    position: relative;
-    top: 0px;
-    left: -24px;
+.hero-left-content .hero-title .tesxt2::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(60deg, hsl(var(--base)), hsl(314, 85%, 66%), hsl(359, 85%, 66%), hsl(44, 85%, 66%), hsl(89, 85%, 66%), hsl(134, 85%, 66%), hsl(179, 85%, 66%));
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 39.5px;
+    animation: moveGradient 3.5s alternate infinite;
 }
 
-.hero-left-content .top-users .thumb-wrap .thumb4 {
-    position: relative;
-    top: 0px;
-    left: -35px;
+.hero-left-content .hero-title .tesxt2 i {
+    rotate: -40deg;
 }
 
-.hero-left-content .top-users .total-user .title {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    margin: 0px;
-    color: hsl(var(--black));
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
-.hero-left-content .top-users .total-user .sub-title {
-    margin: 0px;
-    color: hsl(var(--black)/0.5);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
+.hero-left-content .hero-title .tesxt3 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: hsl(var(--black));
+    -webkit-text-fill-color: hsl(var(--white));
+}
+
+.hero-left-content .hero-title .tesxt4 {
+    font-weight: 300;
 }
 
 .hero-left-content .hero-grp-btn {
@@ -7079,46 +7022,6 @@ select.form-control.form--control:has(option) ~ .form--label {
 .hero-left-content .hero-grp-btn .hero-btn2 {
     background: hsl(var(--base-two));
     padding: 19px, 17px;
-}
-
-.how-work-banner {
-    position: absolute;
-    bottom: -110px;
-    width: 100%;
-    background: hsl(var(--white));
-    padding: 34px 40px;
-    border-radius: 8px;
-    box-shadow: 0px 19px 88.5px -8px rgba(0, 0, 0, 0.21);
-}
-
-.banner-info-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    z-index: 2;
-}
-
-.banner-info-box .content-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.banner-info-box .content-wrap .title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    text-align: left;
-    margin: 0px;
-}
-
-.banner-info-box .content-wrap .sub-title {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.75;
-    text-align: left;
-    color: hsl(var(--black)/0.5);
 }
 
 @media (max-width: 1199px) {
@@ -8449,7 +8352,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .header-wrapper .menu-wrapper ul.main-menu a {
     font-size: 16px;
-    color: hsl(var(--white));
+    color: hsl(var(--black));
     font-weight: 500;
     position: relative;
     text-transform: uppercase;
@@ -8468,7 +8371,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .header-wrapper .menu-wrapper ul.main-menu a.active {
-    color: hsl(var(--white));
+    color: hsl(var(--base));
 }
 
 .header-wrapper .menu-wrapper ul.main-menu a.active:before {
