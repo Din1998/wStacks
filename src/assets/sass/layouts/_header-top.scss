@@ -63,12 +63,12 @@
         &::before {
             position: absolute;
             content: "";
-            width: 1px;
+            width: 4px;
             height: 15px;
             right: 0;
             top: 50%;
             transform: translateY(-50%);
-            background-color: hsl(var(--white) /.4);
+            background-color: hsl(var(--black));
         }
         &-icon {
             font-size: 16px;
@@ -112,15 +112,18 @@
         &:last-child::before {
             display: none;
         }
+        &:nth-child(2)::before {
+            display: none;
+        }
         &::before {
             position: absolute;
             content: "";
-            width: 1px;
-            height: 12px;
-            right: 0;
+            width: 2px;
+            height: 18px;
+            right: -5px;
             top: 50%;
             transform: translateY(-50%);
-            background-color: hsl(var(--dark)/.5);
+            background-color: hsl(var(--black));
         }
     }
     &__icon {
@@ -157,12 +160,12 @@
     align-items: center;
     position: relative;
     i{
-        color: hsl(var(--white));
+        color: hsl(var(--black));
         font-size: 17px;
         margin-right: 5px;
     }
     .select {
-        color: hsl(var(--white));
+        color: hsl(var(--black));
         background-color: transparent;
         border: 1px solid transparent;
         padding: 3px 0px;
@@ -174,8 +177,9 @@
 }
 
 .login-registration-list__item a{
-    background: hsl(var(--base-two));
-    color: hsl(var(--white));
+    background: transparent;
+    border: 1px solid hsl(var(--base));
+    color: hsl(var(--base)) ;
     font-weight: 600;
     padding: 12px 18px;
     border-radius: 8px;

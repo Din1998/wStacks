@@ -57,6 +57,14 @@
     // header bg
     --header-bg: 	hsl(240, 1%, 15%);
     --header--bg: 	hsl(0, 0%, 11.8%);
+
+    --purple: hsl(281, 100%, 50%);
+    --purple-1: 281, 100%, 50%;
+    --yellow: hsl(18, 100%, 66%);
+    --green: 133, 85%, 45%;
+
+
+
     /* ================================ Base Light Color =============================== */
 
     --base-light-h: 152;
@@ -307,7 +315,7 @@
     /*======================= Bootstrap Modifier End ==============================*/
 
     /*=== yellow Lighten ===*/
-    --dark-card-bg:rgba(148, 148, 148, 0.1)
+    --dark-card-bg: rgba(148, 148, 148, 0.1)
 
 
   }::-webkit-scrollbar {

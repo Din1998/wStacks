@@ -474,3 +474,19 @@ button.mfp-close {
     width: 25% !important;
   }
 }
+
+
+
+.purple{
+  background:	hsl(var(--purple));
+}
+.purple-1{
+  background:	hsl(281, 100%, 50%);
+}
+.yellow{
+  background:	hsl(var(--yellow)/0.1);
+}
+.green{
+  background: hsl(133, 85%, 45%);
+}
+

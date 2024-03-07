@@ -1,7 +1,5 @@
 .hero {
     padding-top: 100px;
-    padding-bottom: 40px;
-
     z-index: 1;
     background-color: hsl(var(--base)/0.05);
     position: relative;
@@ -72,64 +70,38 @@
         .tesxt2 {
             padding: 18px 18px 18px 23px;
             border-radius: 39.5px;
-            // border: 3px solid hsl(var(--base));
+            border: 3px solid hsl(var(--base));
             display: inline-block;
             font-size: 27px;
             line-height: 1.19;
             position: relative;
             top: -10px;
             right: 0px;
-            background: hsl(var(--white));
-
-            --border-width: 3px;
-            &::after {
-                position: absolute;
-                content: "";
-                top: calc(-1 * var(--border-width));
-                left: calc(-1 * var(--border-width));
-                z-index: -1;
-                width: calc(100% + var(--border-width) * 2);
-                height: calc(100% + var(--border-width) * 2);
-                background: linear-gradient(
-                  60deg,
-                  hsl(var(--base)),
-                //   hsl(var(--base-two)),
-                //   hsl(var(--base)),
-                  hsl(314, 85%, 66%),
-                  hsl(359, 85%, 66%),
-                  hsl(44, 85%, 66%),
-                  hsl(89, 85%, 66%),
-                  hsl(134, 85%, 66%),
-                  hsl(179, 85%, 66%)
-                );
-                background-size: 300% 300%;
-                background-position: 0 50%;
-                border-radius: 39.5px;
-                animation: moveGradient 3.5s alternate infinite;
-              }
-
             i {
                 rotate: -40deg;
             }
         }
+
         @keyframes moveGradient {
             50% {
-              background-position: 100% 50%;
+                background-position: 100% 50%;
             }
-          }
+        }
+
         .tesxt3 {
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: hsl(var(--black));
             -webkit-text-fill-color: hsl(var(--white));
         }
-        .tesxt4{
+
+        .tesxt4 {
             font-weight: 300;
         }
     }
 
     // grp btn
     .hero-grp-btn {
-
+        position: relative;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -139,9 +111,21 @@
             padding: 19px, 17px;
         }
 
-        .hero-btn2 {
-            background: hsl(var(--base-two));
-            padding: 19px, 17px;
+
+        .video-btn-wrap {
+            position: relative;
+            right: 26px;
+            top: -10px;
+
+            .video-btn {
+                position: relative;
+                right: -94px;
+                top: 9px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
         }
 
     }
