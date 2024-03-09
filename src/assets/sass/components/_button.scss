@@ -16,7 +16,7 @@ button {
       color: hsl(var(--white));
       font-weight: 500;
       padding: 11px 20px;
-      border-radius: 4px;
+      border-radius: 8px;
       position: relative;
       z-index: 1;
       text-align: center;
@@ -39,7 +39,7 @@ button {
       &:hover, &:focus {
           color: hsl(var(--white));
           border-color: transparent;
-          border-radius: 4px;
+          border-radius: 8px;
       }
       &--lg {
         padding: 15px 35px;
@@ -92,9 +92,9 @@ button {
         background-size: cover;
         background-repeat: no-repeat;
         color: hsl(var(--white));
-        border-radius: 4px;
+        border-radius: 8px;
         &:hover, &:focus {
-            background: hsl(var(--base)/0.8);
+            background: hsl(var(--base)/0.7) !important;
         }
         &.pill {
             border-radius: 35px;
@@ -106,7 +106,7 @@ button {
             border: none !important;
             color: hsl(var(--black));
             border-radius: 4px;
-            border: 1px solid hsl(var(--black)/0.05) !important;
+            border: 1px solid hsl(var(--base)) !important;
             &.hover-white-c {
                 &:hover, &:focus{
                     color: hsl(var(--white));

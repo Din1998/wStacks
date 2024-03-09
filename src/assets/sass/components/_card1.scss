@@ -474,12 +474,72 @@
   }
 
 }
+
 // megamenu-2 service card
-.service-card{
-  padding: 12px;
+.service-card {
+  padding: 10px 12px;
   border-radius: 8px;
-  // background: ;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .icon-wrap{
+    .wd{
+      path{
+        fill: hsl(var(--purplee)/0.7);
+      }
+    }
+
+    .wh{
+      path{
+        fill: hsl(var(--yelloww)/0.8);
+      }
+    }
+    .ma{
+      path{
+        fill: hsl(var(--yelloww1));
+      }
+    }
+    .dn{
+      path{
+        fill: hsl(var(--pinkk));
+      }
+    }
+    .ui{
+      path{
+        fill: hsl(var(--greenn));
+      }
+    }
+
+    .sup{
+      path{
+        fill: hsl(var(--purplee)/0.6);
+      }
+    }
+
+
+  }
+
+  .content-wrap {
+    .title {
+      font-size: 16px;
+      line-height: 1.56;
+      font-weight: 600;
+      margin-bottom: 0px;
+      font-family: var(--body-font);
+    }
+
+    .sub-title {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.9;
+      font-family: var(--body-font);
+
+
+    }
+  }
 }
+
 // global base card
 .base--card {
   background: hsl(var(--white));

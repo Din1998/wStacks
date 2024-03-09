@@ -482,15 +482,15 @@
   });
 
 
-    // show more item
-    $('.show-more').click(function () {
-      
-      $('.more-list').toggleClass('show');
+  // show more item
+  $('.show-more').click(function () {
+
+    $('.more-list').toggleClass('show');
 
 
 
-    });
-  
+  });
+
 
 
   // show all menu
@@ -595,23 +595,23 @@
   function handleSlideArrows(slick) {
     var slidesToShow = slick.options.slidesToShow;
     var slideCount = slick.slideCount;
-    var currentSlide = slick.currentSlide || 0; 
-  
+    var currentSlide = slick.currentSlide || 0;
+
     console.log(currentSlide);
-  
+
     if (currentSlide === 0) {
       $(slick.$slider).find('.slick-prev').hide();
     } else {
       $(slick.$slider).find('.slick-prev').show();
     }
-  
+
     if (currentSlide + slidesToShow === slideCount) {
       $(slick.$slider).find('.slick-next').hide();
     } else {
       $(slick.$slider).find('.slick-next').show();
     }
   }
-  
+
   // Initialize sliders
   $('.item-slider1, .item-slider2, .item-slider3').slick({
     dots: false,
@@ -661,12 +661,12 @@
       }
     ]
 
-  }).on('init reInit afterChange', function(event, slick, currentSlide) {
+  }).on('init reInit afterChange', function (event, slick, currentSlide) {
     handleSlideArrows(slick);
   });
-  
+
   // Explicitly call handleSlideArrows after initialization to handle initial slide
-  $('.item-slider1, .item-slider2, .item-slider3').each(function() {
+  $('.item-slider1, .item-slider2, .item-slider3').each(function () {
     var slickInstance = $(this).slick('getSlick');
     handleSlideArrows(slickInstance);
   });
@@ -674,6 +674,19 @@
 
 
   const player = new Plyr('#player');
+
+
+
+  // parallax image
+  document.addEventListener("mousemove", parallax);
+  function parallax(e) {
+    document.querySelectorAll(".animation-img").forEach(function (move) {
+      var movingValue = move.getAttribute("data-value");
+      var x = (e.clientX * movingValue) / 250;
+      var y = (e.clientY * movingValue) / 250;
+      move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    })
+  }
 
 })(jQuery);
 

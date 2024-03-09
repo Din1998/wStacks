@@ -8,18 +8,36 @@
 
 .hero-element-1 {
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 7%;
+    top: 30%;
     z-index: -1;
+    background: hsl(var(--white));
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 40.6px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+  
 
 }
 
 .hero-element-2 {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 50%;
+    top: 20%;
     z-index: -1;
+    background: hsl(var(--white));
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 40.6px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 
 
@@ -27,10 +45,17 @@
 
 .hero-element-3 {
     position: absolute;
-    right: 0px;
-    top: 50%;
+    right: 10%;
+    top: 40%;
     z-index: -1;
-
+    background: hsl(var(--white));
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 40.6px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
@@ -38,12 +63,51 @@
 
 .hero-element-4 {
     position: absolute;
-    left: 100px;
-    top: 10%;
+    left: 12%;
+    bottom: 10%;
     z-index: -1;
-
+    background: hsl(var(--white));
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 40.6px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.hero-element-5 {
+    position: absolute;
+    right: 50%;
+    bottom: 10%;
+    z-index: -1;
+    background: hsl(var(--white));
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 40.6px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-element-6 {
+    position: absolute;
+    right: 100px;
+    bottom: 10%;
+    z-index: -1;
+    background: hsl(var(--white));
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 40.6px 0px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 // svg animation
@@ -63,7 +127,7 @@
         font-size: 73px;
         font-weight: 700;
         line-height: 1.19;
-        margin-bottom: 20px !important;
+        margin-bottom: 45px !important;
         color: hsl(var(--black));
         position: relative;
 
@@ -107,8 +171,7 @@
         gap: 20px;
 
         .hero-btn1 {
-            background: hsl(var(--base));
-            padding: 19px, 17px;
+            padding: 14px 34px !important
         }
 
 
@@ -120,7 +183,7 @@
             .video-btn {
                 position: relative;
                 right: -94px;
-                top: 9px;
+                top: 10px;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;

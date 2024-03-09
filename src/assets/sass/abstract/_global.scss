@@ -478,15 +478,21 @@ button.mfp-close {
 
 
 .purple{
-  background:	hsl(var(--purple));
+  background:	hsl(var(--purplee)/0.03);
+}
+.pink{
+  background:	hsl(var(--pinkk)/0.04);
 }
 .purple-1{
-  background:	hsl(281, 100%, 50%);
+  background:	hsl(var(--purplee)/0.1);
 }
 .yellow{
-  background:	hsl(var(--yellow)/0.1);
+  background:	hsl(var(--yelloww)/0.07);
+}
+.yellow-1{
+  background:	hsl(var(--yelloww1)/0.03);
 }
 .green{
-  background: hsl(133, 85%, 45%);
+  background: 	hsl(var(--greenn)/0.05);
 }
 
