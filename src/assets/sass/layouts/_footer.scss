@@ -2,23 +2,26 @@
 /*============= Footer Start Here =======================*/
 .footer-area {
     position: relative;
-    background: hsl(var(--footer-bg));
+    .footer-top{
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
 }
 
 .footer-item {
     .latest-blog__title a {
-        color: hsl(var(--white));
+        color: hsl(var(--black));
     }
     .latest-blog {
         padding-bottom: 15px;
         margin-bottom: 15px;
-        border-bottom: 1px solid hsl(var(--white)/0.1);
+        border-bottom: 1px solid hsl(var(--black)/0.1);
     }
     span.latest-blog__date {
         color: hsl(var(--black)/0.6);
     }
     &__desc {
-        color: hsl(var(--white)/0.8);
+        color: hsl(var(--black)/0.8);
         margin-bottom: 36px;
         width: 100%;
     }
@@ -35,7 +38,7 @@
         } 
     }
     &__title {
-        color: hsl(var(--white));
+        color: hsl(var(--black));
         padding-bottom: 10px;
         margin-bottom: 25px;
         position: relative;
@@ -64,9 +67,15 @@
 // social icon
 .icon-wrapper{
     .icon{
-        background: hsl(var(--white));
+        background: hsl(var(--base)/0.05);
+        i{
+            color: hsl(var(--black));
+        }
         &:hover{
             background: hsl(var(--base));
+            i{
+                color: hsl(var(--white));
+            }
         }
     }
     div{
@@ -91,7 +100,7 @@
     }
     &__link {
         position: relative;
-        color: hsl(var(--white)/0.7);
+        color: hsl(var(--black));
         display: flex;
         align-items: center;
         gap: 20px;
@@ -113,7 +122,7 @@
         display: flex;
         padding: 1px 0;
         p { 
-            color: hsl(var(--white));
+            color: hsl(var(--black));
         }
         &-icon {
             width: 15px;
@@ -180,8 +189,10 @@
 
 // ============= Bottom Footer End Here =======================
 .bottom-footer {
+    border-top: 1px solid hsl(var(--black)/0.05);
+
     .bottom-footer-text {
-        color: hsl(var(--white));
+        color: hsl(var(--black));
         @include md-screen {
             text-align: center;
         }
@@ -298,10 +309,10 @@
     justify-content: flex-start;
     gap: 16px;
     p{
-        color: hsl(var(--white)/0.8);
+        color: hsl(var(--black));
         width: 100%;
         a{
-            color: hsl(var(--white)/0.8);
+            color: hsl(var(--black));
         }
     }
     i{

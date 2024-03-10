@@ -1,41 +1,41 @@
 .how-work {
-    .thumb-wrap {
-        border-radius: 8px;
-        position: relative;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+    border-bottom: 1px solid hsl(var(--black)/0.05);
 }
+
+
+
 
 .how-work-box {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 24px;
 
-    .number {
-        width: 64px;
-        height: 64px;
-        background: hsl(var(--white));
-        border-radius: 50%;
-        box-shadow: 0px 5px 42.3px 0px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
+    .step {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
 
-        .title {
-            margin: 0px;
-            font-size: 32px;
-            font-weight: 600;
-            line-height: 1.18;
-            -webkit-text-fill-color: hsl(var(--white));
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: hsl(var(--base));
+    .line-bar {
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: hsl(var(--black)/0.05);
+        margin-bottom: 48px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: 50%;
+            top: -9px;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: hsl(var(--base));
+            border-radius: 50%;
+            border: 3px solid hsl(var(--white));
+            transform: translateX(-50%);
         }
     }
 
@@ -43,25 +43,18 @@
         .title {
             font-size: 20px;
             font-weight: 500;
-            line-height: 1.2;
-            color: hsl(var(--black));
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .sub-title {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
-            line-height: 1.75;
-            color: hsl(var(--black)/0.5);
+            line-height: 1.9;
+            text-align: center;
         }
     }
 }
-
-
-
-
-
-
-
 
 
 

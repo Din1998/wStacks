@@ -109,37 +109,37 @@
 
 }
 
-.slick-arrow {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: .2s linear; 
-  background-color: hsl(var(--base / 0.1));
-  color: hsl(var(--black));
-  font-size: 16px;
-  @include md-screen {
-    width: 50px;
-    height: 50px;
-    font-size: 16px;
-  }
-  @include msm-screen {
-    width: 45px;
-    height: 45px;
-  }
-   &:hover {
-    border-color: hsl(var(--base));
-  }
-}
+// .slick-arrow {
+//   position: absolute;
+//   z-index: 1;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   border: none;
+//   width: 100px;
+//   height: 100px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50%;
+//   transition: .2s linear; 
+//   background-color: hsl(var(--base / 0.1));
+//   color: hsl(var(--black));
+//   font-size: 16px;
+//   @include md-screen {
+//     width: 50px;
+//     height: 50px;
+//     font-size: 16px;
+//   }
+//   @include msm-screen {
+//     width: 45px;
+//     height: 45px;
+//   }
+//    &:hover {
+//     border-color: hsl(var(--base));
+//   }
+// }
 .slick-next {
-  right: 0px;
+  right: -125px;
   @include md-screen {
     right: -10px;
   }
@@ -148,7 +148,7 @@
   }
 }
 .slick-prev {
-  left: 0px;
+  left: -125px;
   @include md-screen {
     left: -10px;
   }
@@ -161,20 +161,22 @@
 }
 // -------------- Style two ------------
 .slick-arrow {
+  transform: translateY(-50%);
   position: absolute;
+  top: 50%;
   z-index: 1;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   border-radius: 50% !important;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   transition: .4s;
-  border: 1px solid hsl(var(--black)/0.3);
+  border: 1px solid hsl(var(--black)/0.07);
   color: hsl(var(--white));
-  background: hsl(var(--black));
+  background: hsl(var(--base));
+  font-size: 20px;
   @include lg-screen {
     // top: -69px;
   }
@@ -184,25 +186,19 @@
     right: 50%;
   }
 }
-.slick-arrow:hover {
-  color: hsl(var(--base));
-}
-.slick-next {
-  right: 0px;
+.slick-disabled{
+  background: none;
+  color: hsl(var(--black));
+  &:hover{
+  color: hsl(var(--black)) !important;
+  background: hsl(var( --black)/0.02);
 
-  @include sm-screen {
-    top: auto; 
-    right: calc(50% + -37px);
-
-  } 
-}
-.slick-prev {
-  right: 0px;
-  @include sm-screen {
-    top: auto; 
-    right: calc(50% - -5px);
   }
 }
+.slick-arrow:hover {
+  color: hsl(var(--white));
+}
+
 
 //  Dots
 .slick-dots {
@@ -323,16 +319,16 @@ button.mfp-close {
 
 
 .border-top{
-  border-top: 1px solid hsl(var(--black)/0.1) !important;
+  border-top: 1px solid hsl(var(--black)/0.05) !important;
 }
 .border-left{
-  border-left: 1px solid hsl(var(--black)/0.1) !important;
+  border-left: 1px solid hsl(var(--black)/0.05) !important;
 }
 .border-right{
-  border-right: 1px solid hsl(var(--black)/0.1) !important;
+  border-right: 1px solid hsl(var(--black)/0.05) !important;
 }
 .border-bottom{
-  border-bottom: 1px solid hsl(var(--black)/0.1) !important;
+  border-bottom: 1px solid hsl(var(--black)/0.05) !important;
 }
 
 .global-card{
@@ -475,7 +471,11 @@ button.mfp-close {
   }
 }
 
+.feature-section{
+  border-top: 1px solid hsl(var( --black)/0.05);
+  border-bottom: 1px solid hsl(var( --black)/0.05);
 
+}
 
 .purple{
   background:	hsl(var(--purplee)/0.03);

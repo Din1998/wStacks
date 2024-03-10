@@ -1,7 +1,7 @@
 .testimonial-wrap {
-    background: hsl(var(--base)/0.05);
     padding: 120px 0px;
     position: relative;
+    border-bottom: 1px solid hsl(var(--black)/0.05);
 
     .bg-elemet1 {
         position: absolute;
@@ -33,18 +33,67 @@
     flex-direction: column;
     gap: 20px;
 
+    .content-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .title {
+        font-family: var(--body-font);
         font-size: 36px;
         font-weight: 400;
         line-height: 68px;
         text-align: center;
+        margin-bottom: 56px;
     }
 
+    .auth-wrap {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        // margin-bottom: 40px;
+
+        .dash {
+            display: block;
+            width: 31px;
+            height: 2px;
+            background: hsl(var(--black));
+        }
+
+        .name {
+            font-family: var(--body-font);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 70px;
+            letter-spacing: 0px;
+            text-align: center;
+
+        }
+    }
+
+    .thumb-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
     .user-thumb {
-        width: 79.6px;
-        height: 79.6px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
-        border: 5px solid hsl(var(--white));
+        overflow: hidden;
+        opacity: 0.4;
+
+        &.main{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid hsl(var(--black));
+            overflow: hidden;
+            opacity: 1;
+        }
 
         img {
             width: 100%;
