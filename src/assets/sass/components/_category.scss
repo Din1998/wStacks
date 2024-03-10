@@ -18,7 +18,7 @@
     gap: 24px;
     padding: 64px 56px;
     position: relative;
-
+    transition: 0.1s linear;
     &::after {
         content: "";
         top: -15px;

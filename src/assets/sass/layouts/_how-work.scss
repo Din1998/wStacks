@@ -1,5 +1,5 @@
 .how-work {
-    border-bottom: 1px solid hsl(var(--black)/0.05);
+    border-bottom: 1px solid hsl(var(--black)/0.1);
 }
 
 
@@ -21,7 +21,7 @@
         display: block;
         height: 1px;
         width: 100%;
-        background: hsl(var(--black)/0.05);
+        background: hsl(var(--black)/0.1);
         margin-bottom: 48px;
         position: relative;
 
@@ -84,6 +84,7 @@
         i {
             font-size: 18px;
             color: hsl(var(--base));
+            z-index: 1;
         }
     }
 }
@@ -92,8 +93,7 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    background: hsl(var(--white));
-    border: 2px solid hsl(var(--base));
+    background: hsl(var(--base)/0.2);
     border-radius: 50%;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";

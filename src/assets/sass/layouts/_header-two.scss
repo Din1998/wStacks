@@ -181,7 +181,8 @@
                 }
 
                 .mega-menu {
-                    transition: 0.2s linear;
+                    opacity: 0;
+                    transition: 0.01s linear;
                     visibility: hidden;
                     width: 970px;
                     height: 442px;

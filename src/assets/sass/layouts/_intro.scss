@@ -1,5 +1,5 @@
 .intro-setion{
-    border-top: 1px solid hsl(var(--black)/0.05);
+    border-top: 1px solid hsl(var(--black)/0.1);
 }
 
 
@@ -11,7 +11,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 0px 0px 32px 32px;
-    border-bottom: 1px solid hsl(var(--black)/0.05);
+    border-bottom: 1px solid hsl(var(--black)/0.1);
     background: hsl(var(--white));
     gap: 24px;
     padding: 64px 56px;
@@ -58,10 +58,10 @@
 }
 
 .border-r{
-    border-right: 1px solid hsl(var(--black)/0.05);
+    border-right: 1px solid hsl(var(--black)/0.1);
 }
 .border-l{
-    border-left: 1px solid hsl(var(--black)/0.05);
+    border-left: 1px solid hsl(var(--black)/0.1);
 }
 .radius-r{
     border-radius: 0px 0px 0px 32px;

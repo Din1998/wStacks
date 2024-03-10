@@ -1,6 +1,6 @@
 .why-choose{
     padding-bottom: 273px;
-    border-bottom: 1px solid hsl(var(--black)/0.05);
+    border-bottom: 1px solid hsl(var(--black)/0.1);
     position: relative;
     .line-bar{
         position: absolute;
@@ -22,7 +22,16 @@
     background: hsl(var(--white));
     position: relative;
     .thumb-wrap {
-        margin-bottom: -62px;
+        margin-bottom: -104px;
+        .thumb{
+            .path1 {
+                fill: hsl(var(--base)) !important;
+            }
+
+            .path2 {
+                fill: hsl(var(--base)/0.3) !important;
+            }
+        }
     }
 
 }
