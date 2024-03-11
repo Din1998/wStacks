@@ -68,10 +68,6 @@
 .header-two {
     background: linear-gradient(120deg, hsl(var(--base)/0.3) 0%, hsl(var(--base-two)/0.2) 100%);
 
-    .header-wrapper {
-        padding: 22px 0px;
-    }
-
     .header-wrapper .menu-wrapper ul.main-menu a.active {
         color: hsl(var(--black))
     }

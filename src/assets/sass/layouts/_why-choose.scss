@@ -13,6 +13,20 @@
     }
 }
 
+.why-choose2 {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+    position: relative;
+
+    .line-bar {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        background: hsl(var(--black)/0.1);
+        display: block;
+    }
+}
+
 .wh-circle {
     width: 578px;
     height: 578px;
@@ -62,6 +76,7 @@
 
 }
 
+// card 1
 .why-choose-card {
     position: absolute;
     display: flex;
@@ -90,6 +105,77 @@
     &.wc4 {
         bottom: -162px;
         left: 150px;
+    }
+
+    .icon-wraper {
+        width: 98px;
+        height: 98px;
+        border-radius: 50%;
+        background: hsl(var(--white));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .icon-wrap {
+        width: 68.6px;
+        height: 68.6px;
+        border-radius: 50%;
+        background: hsl(var(--base)/0.07);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .icon {
+            .path1 {
+                fill: hsl(var(--base));
+            }
+
+            .path2 {
+                fill: hsl(var(--base)/0.3);
+            }
+        }
+    }
+
+    .tilte {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+
+}
+
+// card 2
+
+.why-choose-card2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 263px;
+    text-align: center;
+
+    &.rb-none::after{
+        content: none;
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        right: -33px;
+        width: 1px;
+        height: 100%;
+        background: hsl(var(--black)/0.1);
     }
 
     .icon-wraper {

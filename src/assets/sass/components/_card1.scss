@@ -46,15 +46,17 @@
     padding: 16px;
     border-radius: 16px;
     flex-shrink: 0;
-    height: 210px;
+    height: 224px;
     transition: 0.1s linear;
+    width: 427px;
     .thumb {
       border-radius: 16px;
       overflow: hidden;
       position: relative;
-      top: -50px;
+      top: -33px;
       transition: 0.15s linear;
-
+      left: -33px;
+      width: 108%;
       img {
         width: 100%;
         height: 100%;
@@ -66,14 +68,16 @@
   &:hover{
     .thumb-wrap {
       transition: 0.1s linear;
-      // padding: 6px;
+      height: 224px;
     
       .thumb {
         transition: 0.1s linear;
-        top: -3px;
-        left: 0px;
+        top: -12px;
+        left: -11px;
         bottom: 0px;
-  
+        height: 212px;
+        width: 105%;
+
         img {
           width: 100%;
           height: 100%;
