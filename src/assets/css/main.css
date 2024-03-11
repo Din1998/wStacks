@@ -506,15 +506,29 @@
 
 .slick-dots {
     text-align: center;
-    padding-top: 36px;
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .slick-dots li {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.4;
     display: inline-block;
+}
+
+.slick-dots li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .slick-dots li button {
@@ -529,10 +543,13 @@
     transform: rotate(45deg);
 }
 
-.slick-dots li.slick-active button {
-    background-color: hsl(var(--white));
-    width: 8px;
-    height: 8px;
+.slick-dots li.slick-active {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid hsl(var(--black));
+    overflow: hidden;
+    opacity: 1;
 }
 
 /*================= Text Underline Hover ================*/
@@ -564,7 +581,8 @@ button.mfp-close {
     border-radius: 5px;
 }
 
-.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
     color: hsl(var(--white));
     right: 0px;
     text-align: right;
@@ -7318,10 +7336,61 @@ select.form-control.form--control:has(option) ~ .form--label {
     position: relative;
     top: -12px;
     right: 0px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .hero-left-content .hero-title .tesxt2 i {
     rotate: -40deg;
+}
+
+.hero-left-content .hero-title .tesxt2:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: white;
+    box-shadow: 0 0 15px 3px white;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+.hero-left-content .hero-title .tesxt2:hover {
+    color: white;
+    background-color: hsl(var(--base));
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.hero-left-content .hero-title .tesxt2:hover:before {
+    -webkit-animation: shine 0.5s 0s linear;
+    -moz-animation: shine 0.5s 0s linear;
+    animation: shine 0.5s 0s linear;
+}
+
+@keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
 }
 
 @keyframes moveGradient {
@@ -7491,7 +7560,6 @@ select.form-control.form--control:has(option) ~ .form--label {
 .footer-item__title {
     color: hsl(var(--black));
     padding-bottom: 10px;
-    margin-bottom: 25px;
     position: relative;
 }
 
@@ -7552,21 +7620,16 @@ select.form-control.form--control:has(option) ~ .form--label {
 .footer-menu {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin: -5px 0;
+    gap: 0;
 }
 
 .footer-menu__item {
-    display: block;
     padding: 8px 0;
 }
 
 .footer-menu__link {
     position: relative;
     color: hsl(var(--black));
-    display: flex;
-    align-items: center;
-    gap: 20px;
 }
 
 .footer-menu__link i {
@@ -10933,13 +10996,14 @@ li.login-registration-list__item .social-list__item .social-list__link i {
     font-weight: 400;
     line-height: 68px;
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 34px;
 }
 
 .testimonial-card .auth-wrap {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-bottom: 38px;
 }
 
 .testimonial-card .auth-wrap .dash {
@@ -10956,6 +11020,7 @@ li.login-registration-list__item .social-list__item .social-list__link i {
     line-height: 70px;
     letter-spacing: 0px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .testimonial-card .thumb-wrap {
@@ -11237,7 +11302,7 @@ li.login-registration-list__item .social-list__item .social-list__link i {
     top: 50%;
     width: 100%;
     height: 1px;
-    background: hsl(var(--black)/0.05);
+    background: hsl(var(--black)/0.1);
     display: block;
 }
 
@@ -11245,12 +11310,13 @@ li.login-registration-list__item .social-list__item .social-list__link i {
     width: 578px;
     height: 578px;
     border-radius: 50%;
-    border: 1px solid hsl(var(--black)/0.05);
+    border: 1px solid hsl(var(--black)/0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     background: hsl(var(--white));
     position: relative;
+    flex-direction: column;
 }
 
 .wh-circle .thumb-wrap {
@@ -11263,6 +11329,24 @@ li.login-registration-list__item .social-list__item .social-list__link i {
 
 .wh-circle .thumb-wrap .thumb .path2 {
     fill: hsl(var(--base)/0.3) !important;
+}
+
+.wh-circle .thumb-wrap .thumb .code-line {
+    animation: fadeInAnimation 1s infinite;
+}
+
+.wh-circle .thumb-wrap .thumb .code-line1 {
+    animation: fadeInAnimation 1.5s infinite;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .why-choose-card {
@@ -11293,6 +11377,7 @@ li.login-registration-list__item .social-list__item .social-list__link i {
 
 .why-choose-card.wc4 {
     bottom: -162px;
+    left: 150px;
 }
 
 .why-choose-card .icon-wraper {

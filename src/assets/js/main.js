@@ -362,19 +362,35 @@
     })
 
 
+    var dotImages = [
+      'https://w-stacks.vercel.app/assets/images/user/user1.png',
+      'https://w-stacks.vercel.app/assets/images/user/user2.png',
+      'https://w-stacks.vercel.app/assets/images/user/user3.png',
+      'https://w-stacks.vercel.app/assets/images/user/user8.png',
+      'https://w-stacks.vercel.app/assets/images/user/user9.png',
 
+      // Add more URLs as needed
+    ];
 
 
     // slick
     $('.testimonial-slider').slick({
-      dots: false,
-      infinite: false,
+      dots: true,
+      infinite: true,
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: true,
+      initialSlide: 2,
+      arrows: false,
       prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
       nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+      customPaging: function(slider, i) {
+        if (i >= 0 && i < dotImages.length) {
+          var imageSrc = dotImages[i]; 
+          return '<img src="' + imageSrc + '" class="slick-dot-image" />';
+        }
+      },
+
       responsive: [
         {
           breakpoint: 1100,
