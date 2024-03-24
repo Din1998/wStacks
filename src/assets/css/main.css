@@ -61,9 +61,9 @@
     --base-component-l: 17%;
     --base-component: var(--base-component-h) var( --base-component-s) var(--base-component-l);
   /*========================= Base Color =============================*/
-    --base-h: 202;
+    --base-h: 195;
     --base-s: 100%;
-    --base-l: 49%;
+    --base-l: 45%;
     --base: var(--base-h) var( --base-s) var(--base-l);
   /*=== Secondary Color ===*/
     --secondary-h: 232;
@@ -783,6 +783,10 @@ button.mfp-close {
 
 .feature-section {
     border-top: 1px solid hsl(var(--black)/0.1);
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+}
+
+.all-product {
     border-bottom: 1px solid hsl(var(--black)/0.1);
 }
 
@@ -2615,6 +2619,116 @@ button:focus {
     object-fit: cover;
 }
 
+.product-card {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid hsl(var(--black)/0.1);
+    transition: 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease-in-out;
+}
+
+.product-card .thumb-wrap {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.product-card .thumb-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card .content-wrap {
+    margin-bottom: 38px;
+}
+
+.product-card .content-wrap .script-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    gap: 4px;
+    margin-bottom: 10px;
+    color: hsl(var(--danger));
+}
+
+.product-card .content-wrap .script-wrap .script {
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: hsl(var(--danger));
+}
+
+.product-card .content-wrap .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.product-card .content-wrap .short-des {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+
+.product-card .card-btm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card .card-btm .price-wrap .price {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.service-cardx {
+    display: flex;
+}
+
+.service-cardx .thumb-wrap {
+    position: relative;
+    border: 1px dashed hsl(var(--black));
+    padding: 16px;
+    border-radius: 16px;
+    flex-shrink: 0;
+    height: 335.92px;
+    transition: 0.1s linear;
+    width: 92%;
+}
+
+.service-cardx .thumb-wrap .thumb {
+    width: 100%;
+    height: 362.13px;
+    border-radius: 16px;
+    position: absolute;
+    top: -50px;
+    right: -20px;
+    overflow: hidden;
+}
+
+.service-cardx .thumb-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-cardx .content-wrap .title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
 .blog-card1 {
     border-radius: 8px;
     overflow: hidden;
@@ -3990,7 +4104,7 @@ input[type=number] {
 }
 
 .pagination .page-item .page-link {
-    border: 1px solid hsl(var(--base));
+    border: none;
     margin: 0 5px;
     border-radius: 50%;
     height: 40px;
@@ -4002,18 +4116,21 @@ input[type=number] {
     font-weight: 500;
     padding: 0;
     color: hsl(var(--black));
+    background: hsl(var(--base)/0.1);
 }
 
 .pagination .page-item .page-link.active, .pagination .page-item .page-link:hover {
-    color: hsl(var(--base));
+    color: hsl(var(--white));
+    background: hsl(var(--base));
 }
 
 .pagination .page-item .page-link:focus {
     box-shadow: none;
 }
 
-.pagination .page-item.active .page-link {
-    color: hsl(var(--black));
+.pagination .page-item.active {
+    color: hsl(var(--white));
+    background: hsl(var(--base));
 }
 
 /*====================== Table Style ====================*/
@@ -7218,6 +7335,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     z-index: 1;
     background-color: hsl(var(--base)/0.05);
     position: relative;
+    border-bottom: 1px solid hsl(var(--black)/0.1);
 }
 
 .hero-element-1 {
@@ -8800,7 +8918,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     align-items: flex-start;
     line-height: 1;
     gap: 8px;
-    padding: 34px 0px;
+    padding: 28px 0px;
 }
 
 .header-wrapper .menu-wrapper ul.main-menu .link i {
@@ -8810,7 +8928,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .header-wrapper .menu-wrapper ul.main-menu .link:before {
     position: absolute;
-    bottom: 10px;
+    bottom: -2px;
     content: "";
     width: 100%;
     height: 2px;
@@ -8830,7 +8948,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     width: 12px;
     height: 12px;
     background: hsl(var(--base));
-    bottom: 18px;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%, 50%);
     clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
@@ -8859,7 +8977,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     width: 12px;
     height: 12px;
     background: hsl(var(--base));
-    bottom: 18px;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%, 50%);
     clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
@@ -11016,10 +11134,6 @@ li.login-registration-list__item .social-list__item .social-list__link i {
 .discover-box .title {
     color: hsl(var(--white));
     margin: 0px;
-}
-
-.intro-setion {
-    border-top: 1px solid hsl(var(--black)/0.1);
 }
 
 .intro-card {
