@@ -539,6 +539,10 @@ button.mfp-close {
   border-bottom: 1px solid hsl(var(--black)/0.1);
 }
 
+.technology{
+  border-bottom: 1px solid hsl(var(--black)/0.1);
+}
+
 .purple {
   background: hsl(var(--purplee)/0.03);
 }
@@ -561,4 +565,32 @@ button.mfp-close {
 
 .green {
   background: hsl(var(--greenn)/0.05);
+}
+
+
+.bt-0{
+  border-top: none !important;
+}
+.br-0{
+  border-right: none !important;
+}
+.bl-0{
+  border-left: none !important;
+}
+.bb-0{
+  border-bottom: none !important;
+}
+
+.br-tl{
+  border-radius: 12px 0px 0px 0px !important;
+}
+.br-tr{
+  border-radius: 0px 12px 0px 0px !important;
+}
+
+.br-br{
+  border-radius: 0px 0px 12px 0px !important;
+}
+.br-bl{
+  border-radius: 0px 0px 0px 12px !important;
 }

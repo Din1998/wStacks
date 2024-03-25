@@ -706,6 +706,46 @@
     })
   }
 
+
+
+
+    const colors = [
+        'hsl(101, 68%, 44%)',
+        'hsl(45, 100%, 51%)',
+        'hsl(354, 78%, 51%)',
+        'hsl(264, 100%, 50%)',
+        'hsl(198, 100%, 50%)',
+        'hsl(302, 100%, 50%)',
+     
+    ];
+
+    function changeBackgroundColor() {
+        $('.ui-dot').each(function(index) {
+            const randomColorIndex = Math.floor(Math.random() * colors.length);
+            const randomColor = colors[randomColorIndex];
+            const delay = index * 100;
+            setTimeout(() => {
+                $(this).css('background-color', randomColor);
+            }, delay);
+        });
+    }
+  
+    changeBackgroundColor();
+
+    const intervalId = setInterval(changeBackgroundColor, 1000); 
+    $('.ui-dot').hover(function() {
+        clearInterval(intervalId);
+    }, function() {
+        intervalId = setInterval(changeBackgroundColor, 1000);
+    });
+
+
+
+
+
+
+
+
 })(jQuery);
 
 

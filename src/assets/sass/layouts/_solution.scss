@@ -1,0 +1,645 @@
+.web-solution {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+
+    .web-thumb-wrap {
+        position: relative;
+
+        .thumb1 {
+            border-radius: 16px;
+            overflow: hidden;
+            width: 93%;
+            height: 458px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .thumb2 {
+            position: absolute;
+            width: 256px;
+            height: 198px;
+            border: 5px solid hsl(var(--white));
+            border-radius: 16px;
+            overflow: hidden;
+            left: 10%;
+            bottom: -50px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+        }
+
+        .elements1 {
+            border-radius: 8px;
+            position: absolute;
+            top: 156px;
+            left: -50px;
+            background: hsl(var(--danger));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+        .elements2 {
+            border-radius: 8px;
+            position: absolute;
+            top: 85px;
+            right: 0px;
+            background: hsl(var(--purplee));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+        .elements3 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: -24px;
+            right: 130px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+    }
+
+    .web-content-wrap {
+        .name {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 605x;
+            text-align: left;
+        }
+
+        .short-des1 {
+            margin-bottom: 20px;
+        }
+
+        .short-des2 {
+            margin-bottom: 42px;
+        }
+    }
+}
+
+
+.mobile-solution {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+
+    .web-thumb-wrap {
+        position: relative;
+        display: flex;
+        justify-content: end;
+
+        .thumb1 {
+            border-radius: 16px;
+            overflow: hidden;
+            width: 100%;
+            height: 528px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .circle-bg {
+            position: absolute;
+            width: 479.54px;
+            height: 479.54px;
+            border-radius: 50%;
+            background: hsl(var(--base)/0.1);
+
+            z-index: -1;
+
+        }
+
+        .elements1 {
+            border-radius: 8px;
+            position: absolute;
+            top: 156px;
+            left: -50px;
+            background: hsl(var(--danger));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+            }
+        }
+
+        .elements2 {
+            border-radius: 8px;
+            position: absolute;
+            top: 85px;
+            right: 0px;
+            background: hsl(var(--purplee));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+        .elements3 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: -24px;
+            right: 130px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+    }
+
+    .web-content-wrap {
+        .name {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 605x;
+            text-align: left;
+        }
+
+        .short-des1 {
+            margin-bottom: 20px;
+        }
+
+        .short-des2 {
+            margin-bottom: 42px;
+        }
+    }
+}
+
+
+.ui-solution {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+
+    .web-thumb-wrap {
+        position: relative;
+        width: 100%;
+
+        .thumb1 {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            width: 440px;
+            height: 350px;
+            right: -146px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .thumb2 {
+            position: absolute;
+            width: 256px;
+            height: 198px;
+            border: 5px solid hsl(var(--white));
+            border-radius: 16px;
+            overflow: hidden;
+            left: 10%;
+            bottom: -108px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+        }
+
+        .elements1 {
+            border-radius: 8px;
+            position: absolute;
+            top: 30px;
+            left: 96px;
+            background: hsl(var(--purplee));
+            height: 170px;
+            width: 15px;
+
+
+        }
+
+        .elements2 {
+            position: absolute;
+            bottom: -95px;
+            right: 138px;
+            padding: 24px 21px;
+            background: hsl(var(--black)/0.06);
+            border-radius: 9px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+            ul {
+                display: flex;
+                gap: 6px;
+
+                li {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .elements3 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: -24px;
+            right: 130px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+    }
+
+    .web-content-wrap {
+        .name {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 605x;
+            text-align: left;
+        }
+
+        .short-des1 {
+            margin-bottom: 20px;
+        }
+
+        .short-des2 {
+            margin-bottom: 42px;
+        }
+    }
+}
+
+
+.hosting-solution {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+
+    .web-thumb-wrap {
+        position: relative;
+
+        .thumb1 {
+            border-radius: 16px;
+            overflow: hidden;
+            width: 93%;
+            height: 458px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .svg-bg {
+                fill: hsl(var(--base));
+                stroke: hsl(var(--base));
+                stroke-width: 2;
+                stroke-dasharray: 810;
+                stroke-dashoffset: 810;
+                animation: offset 1s linear infinite, fill-it .8s 1s infinite;
+            }
+
+            .svg-bg1 {
+                fill: hsl(var(--base));
+                stroke: hsl(var(--base));
+                stroke-width: 2;
+                stroke-dasharray: 810;
+                stroke-dashoffset: 810;
+                animation: offset 1.7s linear infinite, fill-it .8s 1.7s infinite;
+            }
+
+
+            @keyframes offset {
+                100% {
+                    stroke-dashoffset: 0;
+                    fill: hsl(var(--base));
+
+                }
+            }
+
+            @keyframes fill-it {
+                100% {
+                    fill: hsl(var(--base));
+                }
+            }
+
+
+        }
+
+        .thumb2 {
+            position: absolute;
+            width: 256px;
+            height: 198px;
+            border: 5px solid hsl(var(--white));
+            border-radius: 16px;
+            overflow: hidden;
+            left: 10%;
+            bottom: -50px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .elements1 {
+            border-radius: 8px;
+            position: absolute;
+            top: 44px;
+            left: 98px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+            }
+        }
+
+        .elements2 {
+            border-radius: 8px;
+            position: absolute;
+            top: -70px;
+            right: 195px;
+            background: hsl(var(--danger));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+            }
+        }
+
+        .elements3 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: 150px;
+            right: 26px;
+            background: hsl(var(--purplee));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+            }
+        }
+
+    }
+
+    .web-content-wrap {
+        .name {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 605x;
+            text-align: left;
+        }
+
+        .short-des1 {
+            margin-bottom: 20px;
+        }
+
+        .short-des2 {
+            margin-bottom: 42px;
+        }
+    }
+}
+
+.domain-solution {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+
+    .web-thumb-wrap {
+        position: relative;
+        display: flex;
+        justify-content: end;
+
+        .thumb1 {
+            overflow: hidden;
+            width: 460px;
+            height: 460px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .thumb2{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            border: 5px solid hsl(var(--white));
+            border-radius: 50%;
+            overflow: hidden;
+            width: 162px;
+            height: 162px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+       
+        .elements1 {
+            border-radius: 8px;
+            position: absolute;
+            top: 156px;
+            left: -50px;
+            background: hsl(var(--danger));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+            }
+        }
+
+        .elements2 {
+            border-radius: 8px;
+            position: absolute;
+            top: 85px;
+            right: 0px;
+            background: hsl(var(--purplee));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+        .elements3 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: -24px;
+            right: 130px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+        .elements4 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: -24px;
+            right: 130px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+        .elements5 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: -24px;
+            right: 130px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+        .elements6 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: -24px;
+            right: 130px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+        .elements7 {
+            border-radius: 8px;
+            position: absolute;
+            bottom: -24px;
+            right: 130px;
+            background: hsl(var(--greenn));
+            border: 3px solid hsl(var(--white));
+            padding: 4px 12px;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.05);
+            .laravel {
+                color: hsl(var(--white));
+                font-family: var(--salsa);
+                font-size: 22px;
+                line-height: 1.5;
+
+            }
+        }
+
+    }
+
+    .web-content-wrap {
+        .name {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 605x;
+            text-align: left;
+        }
+
+        .short-des1 {
+            margin-bottom: 20px;
+        }
+
+        .short-des2 {
+            margin-bottom: 42px;
+        }
+    }
+}

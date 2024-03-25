@@ -212,6 +212,34 @@
 
 }
 
+// technology card
+.technology-card {
+  border: 1px solid hsl(var(--black)/0.1);
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 28px;
+
+  .icon-wrap {
+    width: 68.6px;
+    height: 68.6px;
+    border-radius: 50%;
+    background: hsl(var(--base)/0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-wrap {
+    .name {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: left;
+    }
+  }
+}
+
 // blog card
 .blog-card1 {
   border-radius: 8px;
