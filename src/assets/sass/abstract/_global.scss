@@ -543,6 +543,30 @@ button.mfp-close {
   border-bottom: 1px solid hsl(var(--black)/0.1);
 }
 
+.contact-section{
+  border-bottom: 1px solid hsl(var(--black)/0.1);
+}
+.packeg-build{
+  border-bottom: 1px solid hsl(var(--black)/0.1);
+  .item-wrap{
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+    position: relative;
+    .side-bar{
+      position: absolute;
+      top: -18px;
+      left: 3px;  
+      height: 100%;
+      width: 1px;
+      background: hsl(var(--black)/0.1);
+    }
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}
+
 .purple {
   background: hsl(var(--purplee)/0.03);
 }

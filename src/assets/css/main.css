@@ -54,6 +54,7 @@
     --yelloww1: 43 100% 50%;
     --greenn: 133 85% 45%;
     --envato: 89 46% 48%;
+    --configbg: 200 100% 98%;
   /* ================================ Base Light Color =============================== */
     --base-light-h: 152;
     --base-light-s: 100%;
@@ -796,6 +797,34 @@ button.mfp-close {
 
 .technology {
     border-bottom: 1px solid hsl(var(--black)/0.1);
+}
+
+.contact-section {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+}
+
+.packeg-build {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+}
+
+.packeg-build .item-wrap {
+    border-bottom: 1px solid hsl(var(--black)/0.1);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.packeg-build .item-wrap .side-bar {
+    position: absolute;
+    top: -18px;
+    left: 3px;
+    height: 100%;
+    width: 1px;
+    background: hsl(var(--black)/0.1);
+}
+
+.packeg-build .item-wrap:last-child {
+    border-bottom: none;
 }
 
 .purple {
@@ -2586,6 +2615,11 @@ button:focus {
     padding: 10px 12px;
 }
 
+.next-btn {
+    padding: 10px 38px;
+    font-size: 18px;
+}
+
 .base-card {
     display: flex;
     align-items: end;
@@ -3038,6 +3072,26 @@ button:focus {
     text-align: left;
 }
 
+.details-card2 .tags-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.details-card2 .tags-wrap li {
+    border: 1px solid hsl(var(--black)/0.2);
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+.details-card2 .tags-wrap li p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 .ad-card {
     background: hsl(var(--footer-bg));
     border-radius: 12px;
@@ -3346,6 +3400,12 @@ button:focus {
     background: hsl(var(--white));
     padding: 30px;
     border-radius: 12px;
+}
+
+.build-card-wrap {
+    background: hsl(var(--base)/0.02);
+    border-radius: 12px;
+    padding: 36px;
 }
 
 /*====================== Form Style ====================*/
@@ -7223,6 +7283,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     padding: 64px 56px;
     position: relative;
     transition: 0.1s linear;
+    width: 100%;
 }
 
 .category-card::after {
@@ -7275,6 +7336,112 @@ select.form-control.form--control:has(option) ~ .form--label {
 }
 
 .category-card .content-wrap .sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: hsl(var(--black)/0.5);
+    text-align: center;
+}
+
+.configuration-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 11px;
+    border: 1px solid hsl(var(--black)/0.1);
+    background: hsl(var(--white));
+    gap: 24px;
+    padding: 12px 24px;
+    position: relative;
+    transition: 0.1s linear;
+    width: 100%;
+}
+
+.configuration-card.input-active {
+    position: relative;
+    border: 1px solid hsl(var(--black));
+    background: hsl(var(--configbg));
+}
+
+.configuration-card.input-active::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    text-align: center;
+    color: hsl(var(--white));
+    top: 8px;
+    left: 8px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: hsl(var(--base));
+    z-index: 1;
+    opacity: 1;
+}
+
+.configuration-card.input-active::after {
+    content: "";
+    top: -7px;
+    position: absolute;
+    background: hsl(var(--base));
+    width: 100%;
+    height: 140px;
+    border-radius: 11px;
+    border: 1px solid hsl(var(--black));
+    z-index: -1;
+    opacity: 1;
+}
+
+.configuration-card::after {
+    content: "";
+    top: -7px;
+    position: absolute;
+    background: hsl(var(--base));
+    width: 100%;
+    height: 140px;
+    border-radius: 11px;
+    border: 1px solid hsl(var(--black));
+    z-index: -1;
+    opacity: 0;
+}
+
+.configuration-card:hover {
+    border: 1px solid hsl(var(--black));
+}
+
+.configuration-card:hover::after {
+    opacity: 1;
+}
+
+.configuration-card .icon-wrap {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.configuration-card .icon-wrap .icon .path1 {
+    fill: hsl(var(--base));
+}
+
+.configuration-card .icon-wrap .icon .path2 {
+    fill: hsl(var(--base)/0.3);
+}
+
+.configuration-card .content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.configuration-card .content-wrap .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: hsl(var(--black)) !important;
+}
+
+.configuration-card .content-wrap .sub-title {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.75;
@@ -10157,6 +10324,28 @@ li.login-registration-list__item .social-list__item .social-list__link i {
     font-weight: 700;
     line-height: 1.16;
     margin: 0px;
+}
+
+.section-content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.section-content-wrap .dot-base {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: hsl(var(--base));
+    position: relative;
+}
+
+.section-content-wrap .title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0px;
 }
 
 @media (max-width: 990px) {
@@ -13887,8 +14076,14 @@ blockquote::before {
 }
 
 .contact-card {
-    padding: 40px 28px;
+    padding: 40px 0px;
     height: 100%;
+}
+
+.contact-card .title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 60px;
 }
 
 .card-left {

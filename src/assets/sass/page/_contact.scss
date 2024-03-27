@@ -67,12 +67,17 @@
 }
 
 .contact-card {
-  padding: 40px 28px;
+  padding: 40px 0px;
   height: 100%;
-
+  
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 60px;
+  }
 }
 
-.card-left{
+.card-left {
   border-right: 1px solid hsl(var(--black)/0.05);
 }
 

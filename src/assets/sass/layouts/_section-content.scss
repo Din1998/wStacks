@@ -17,6 +17,7 @@
         }
 
     }
+
     .section-link {
         color: hsl(var(--base));
         text-decoration: underline;
@@ -96,6 +97,30 @@
         font-weight: 700;
         line-height: 1.16;
         margin: 0px;
+    }
+}
+
+// 
+.section-content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 24px;
+    .dot-base {
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background: hsl(var(--base));
+        position: relative;
+        
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0px;
+
     }
 }
 

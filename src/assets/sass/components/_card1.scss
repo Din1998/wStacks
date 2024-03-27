@@ -454,10 +454,10 @@
       width: 100%;
       padding-bottom: 8px;
 
-      &:last-child{
+      &:last-child {
         border-bottom: none;
       }
-      
+
       .icon-wrap {
         width: 33.26px;
         height: 32.38px;
@@ -487,6 +487,27 @@
           text-align: left;
 
         }
+      }
+    }
+  }
+
+  .tags-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+    li {
+      border: 1px solid hsl(var(--black)/0.2);
+      border-radius: 6px;
+      padding: 2px 6px;
+
+      p {
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
       }
     }
   }
@@ -839,3 +860,10 @@
   padding: 30px;
   border-radius: 12px;
 }
+
+.build-card-wrap{
+  background: hsl(var(--base)/0.02);
+  border-radius: 12px;
+  padding: 36px;
+}
+

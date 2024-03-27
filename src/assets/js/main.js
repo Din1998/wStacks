@@ -742,8 +742,17 @@
 
 
 
-
-
+    $('input[name="radio1"]').on('change', function() {
+      $('label').removeClass('input-active'); // Remove the class from all labels
+  
+      if ($(this).is(':checked')) {
+          var labelForRadio = $('label[for="' + $(this).attr('id') + '"]');
+          if (labelForRadio.length > 0) {
+              labelForRadio.addClass('input-active');
+          }
+      }
+  });
+   
 
 
 })(jQuery);
